@@ -1,2 +1,4 @@
 # odin-recipes
-The odin project recopes project
+<a href="https://spectre-xenon.github.io/odin-recipes" target="_blank">
+The odin project recipes project
+</a>
