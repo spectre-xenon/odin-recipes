@@ -22,8 +22,8 @@ body {
   font-size: 44px;
   font-family: "Gabriela", serif;
   color: white;
-  margin-bottom: 1%;
-  margin-top: 1%;
+  margin-bottom: 2%;
+  margin-top: 2%;
 }
 
 .container {
@@ -32,36 +32,70 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 1%;
+  padding-left: 20px;
 }
 
 .img-container {
-  height: 85%;
-  width: 85%;
-  border-radius: 16px;
+  display: inline;
+  height: 90%;
+  width: 100%;
   overflow: hidden;
-  rotate: 10deg;
-  display: inline-block;
+  border-radius: 20px;
+  border-radius: 0px;
+  margin-left: -20px;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+  position: relative;
 }
 
-.img-container:hover {
+.img-container:hover,
+img:hover {
   scale: 105%;
+  z-index: 12;
+}
+
+a:hover + img {
+  scale: 110%;
+  z-index: 12;
+  border-radius: 0px;
 }
 
 img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  right: 100%;
   object-fit: cover;
+  border-radius: 20px;
+  rotate: 2deg;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+img:hover {
+  border-radius: 0px;
 }
 
 a {
-  left: -100%;
-  top: -100%;
-  width: 100%;
+  opacity: 0;
+  background: rgba(34, 34, 34, 0.31);
+  backdrop-filter: blur(0px);
+  position: absolute;
+  top: 0;
+  left: 0;
   height: 100%;
+  width: 100%;
+  text-align: center;
+  padding-top: 70%;
   font-size: 44px;
   text-decoration: unset;
   font-family: "Gabriela", serif;
   color: white;
-  z-index: 12;
+  z-index: 13;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+a:hover {
+  opacity: 1;
+  backdrop-filter: blur(7.5px);
 }
