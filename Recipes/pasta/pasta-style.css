@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #7d7d7d;
+}
+
+::-moz-selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+body {
+  background-color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.left-container {
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-container {
+  position: absolute;
+  left: 40%;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  gap: 3%;
+}
+
+.img-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  padding-bottom: 20%;
+}
+
+.line {
+  height: 90%;
+  width: 2px;
+  background-color: rgb(255, 255, 255);
+}
+
+.food-img {
+  width: 80%;
+  height: 40%;
+  border-radius: 16px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+}
+
+.food-img:hover {
+  rotate: -5deg;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header {
+  font-family: "Gabriela", serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 14px;
+}
+
+h1 {
+  font-family: "Gabriela", serif;
+  font-size: 50px;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 2%;
+}
+
+h2 {
+  font-family: "Gabriela", serif;
+  font-size: 32px;
+  color: white;
+  margin-bottom: 14px;
+  margin-top: 2%;
+  align-self: flex-start;
+}
+
+p {
+  color: white;
+  font-family: "Gabriela", serif;
+  font-size: 18px;
+  margin-bottom: 1%;
+}
+
+ul {
+  height: 100%;
+  list-style-position: inside;
+  align-self: flex-start;
+}
+
+li {
+  color: white;
+  font-family: "Gabriela", serif;
+  font-size: 18px;
+  left: 20px;
+  margin-bottom: 40px;
+}
+
+::marker {
+  content: "> ";
+}
+
+li span {
+  position: relative;
+}
+
+em {
+  font-size: 20;
+}

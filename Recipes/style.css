@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
+::selection {
+  color: rgb(0, 0, 0);
+  background: rgb(255, 255, 255);
+}
+
 html {
   height: 100%;
   width: 100%;
